@@ -1,4 +1,4 @@
-# 👋 Olá! Eu sou [Seu Nome]
+# 👋 Olá! Eu sou o Rogério
 
 🎯 **Sobre Mim**  
 Sou um desenvolvedor apaixonado por tecnologia, aprendizado contínuo e resolução de problemas. Sempre em busca de novas ideias e desafios.
