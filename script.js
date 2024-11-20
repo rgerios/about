@@ -10,7 +10,7 @@ btnGenerate.addEventListener("click", () => {
     // Configuração do formato final do PDF
     const options = {
         margin: [10, 10, 10, 10],
-        filename: "currículo-edivaldo.pdf",
+        filename: "RogerioSilvaProfile.pdf",
         html2canvas: { scale: 2 },
         jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
     };
