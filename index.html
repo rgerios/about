@@ -16,15 +16,23 @@
         }
 
         /* Vídeo de plano de fundo */
-        #bg-video {
+        .youtube-bg {
             position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1; /* Fica atrás do conteúdo */
+        }
+
+        .youtube-bg iframe {
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            z-index: -1; /* Fica atrás do conteúdo */
-            opacity: 0.6; /* Leve transparência para melhor legibilidade */
+            pointer-events: none; /* Desativa interação do usuário com o vídeo */
         }
 
         /* Container principal */
@@ -174,11 +182,15 @@
     </style>
 </head>
 <body>
-    <!-- Vídeo de plano de fundo -->
-    <video autoplay loop muted playsinline id="bg-video">
-        <source src="https://www.youtube.com/watch?v=u5IuKGp2LWY" type="video/mp4">
-        Seu navegador não suporta vídeos HTML5.
-    </video>
+    <!-- Vídeo de plano de fundo do YouTube -->
+    <div class="youtube-bg">
+        <iframe 
+            src="https://www.youtube.com/embed/7fdAuANtQYQ?autoplay=1&loop=1&playlist=7fdAuANtQYQ&mute=1&controls=0&showinfo=0&modestbranding=1"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+        </iframe>
+    </div>
 
     <div class="container">
         <header>
